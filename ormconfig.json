@@ -1,0 +1,26 @@
+{
+   "host": "159.65.107.229",
+   "port": 5432,
+   "username": "postgres",
+   "password": "prueba123",
+   "database": "examen",
+   "type": "postgres",
+   "synchronize": true,
+   "logging": true,
+   "logger": "advanced-console",
+   "dropSchema": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
